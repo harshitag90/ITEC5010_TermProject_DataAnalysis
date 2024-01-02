@@ -1,0 +1,56 @@
+Healthcare Products Data Analysis on Amazon website
+
+This project consists of two Python scripts: one for web scraping using Selenium and another for data analysis using Streamlit.
+
+Installation Instructions:
+
+Selenium for Web Scraping (Python script - 'WebScraping_Selenium.ipynb' file)
+
+1. Selenium Installation:
+   
+   pip install selenium
+   
+2. WebDriver (ChromeDriver):
+   - Download ChromeDriver from [here](https://sites.google.com/chromium.org/driver/) and place it in your working directory.
+   - Update the path variable in the web scraping script (ipynb file) with the path to your ChromeDriver.
+
+Data Analysis Dependencies (Python script - 'DataAnalysis_Streamlit.py' file)
+
+1. Streamlit Installation:
+   
+   pip install streamlit
+   
+2. Other Data Analysis Libraries:
+   
+   pip install pandas seaborn matplotlib scikit-learn wordcloud scipy
+   
+
+Running the Scripts:
+
+Web Scraping (Selenium):
+1. Open the ipynb file in a Jupyter Notebook or any compatible environment.
+2. Run the cells sequentially.
+3. Provide a product to search when prompted.
+4. The scraped data will be saved as product_list.xlsx.
+
+Data Analysis (Streamlit):
+1. Run the Streamlit file using the following command in your terminal:
+   
+   streamlit run <filename.py>
+   
+   Replace <filename.py> with the name of the Python file (DataAnalysis_Streamlit.py) for data analysis.
+2. Access the Streamlit app through your browser for extensive Data Visualizations.
+
+File Structure:
+- Healthcare_Products/
+    - Web_Scraping/
+        - WebScraping_Selenium.ipynb
+        - chromedriver.exe
+    - Data_Analysis/
+        - DataAnalysis_Streamlit.py
+        - product_list.xlsx
+
+
+Notes:
+- Ensure you have the appropriate permissions and dependencies installed.
+- Adjust file paths, if necessary, based on your directory structure.
